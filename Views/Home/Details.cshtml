@@ -1,0 +1,31 @@
+@model Contact01.Models.Contact
+@using Contact01.Models
+
+<h2>Contact Details</h2>
+
+<div>
+    <h4>Contact</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">First Name</dt>
+        <dd class="col-sm-10">@Model.FirstName ?? "No First Name"</dd>
+
+        <dt class="col-sm-2">Last Name</dt>
+        <dd class="col-sm-10">@Model.LastName ?? "No Last Name"</dd>
+
+        <dt class="col-sm-2">Phone</dt>
+        <dd class="col-sm-10">@Model.Phone ?? "No Phone"</dd>
+
+        <dt class="col-sm-2">Email</dt>
+        <dd class="col-sm-10">@Model.Email ?? "No Email"</dd>
+
+        <dt class="col-sm-2">Category</dt>
+        <dd class="col-sm-10">@Model.Category?.CategoryName ?? "No Category Assigned"</dd>
+    </dl>
+
+    <p>
+        <a class="btn btn-primary" href="@Url.Action("Edit", new { id = Model.ContactId })">Edit</a> |
+        <a class="btn btn-danger" href="@Url.Action("Delete", new { id = Model.ContactId })">Delete</a> |
+        <a class="btn btn-secondary" href="@Url.Action("Index")">Back to List</a>
+    </p>
+</div>
