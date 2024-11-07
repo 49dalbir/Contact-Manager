@@ -16,3 +16,20 @@ This project is a Contact Manager application developed with ASP.NET and C#. It 
 - **Entity Framework**: For database operations and ORM (optional if used).
 - **SQL Server**: Database to store contact information (optional if used).
 
+## Setup Instructions
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/Contact-Manager.git
+
+    Open in Visual Studio: Open the project folder, then open the solution file (.sln) in Visual Studio.
+
+    Restore Dependencies: Go to Tools > NuGet Package Manager > Manage NuGet Packages for Solution in Visual Studio, and restore any required packages.
+
+    Configure the Database:
+        Update the connection string in appsettings.json to connect to your SQL Server.
+        If using Entity Framework, run migrations with:
+
+    dotnet ef database update
+
+Run the Application: Press F5 in Visual Studio to start the application and open it in your default browser.
