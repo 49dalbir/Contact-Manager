@@ -16,5 +16,3 @@ This project is a Contact Manager application developed with ASP.NET and C#. It 
 - **Entity Framework**: For database operations and ORM (optional if used).
 - **SQL Server**: Database to store contact information (optional if used).
 
-## Project Structure
-
